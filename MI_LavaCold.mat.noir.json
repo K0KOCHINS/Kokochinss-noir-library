@@ -1,0 +1,18 @@
+{
+  "schema": "noir.material/1",
+  "parent": "content/packs/graph-essentials/materials/MG_Lava.mat.noir.json",
+  "values": {},
+  "graphValues": {
+    "Glow": [
+      2500.0,
+      14000.0,
+      50000.0
+    ],
+    "Scale": 2.4,
+    "Rock": [
+      0.03,
+      0.035,
+      0.05
+    ]
+  }
+}

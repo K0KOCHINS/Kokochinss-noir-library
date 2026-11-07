@@ -1,0 +1,107 @@
+{
+  "schema": "noir.material/1",
+  "parent": "",
+  "values": {
+    "twoSided": false,
+    "alphaMask": false,
+    "alphaCutoff": 0.5,
+    "unlit": false
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": 1,
+        "type": "Output",
+        "pos": [
+          520,
+          0
+        ],
+        "inputs": {
+          "baseColor": [
+            2,
+            0
+          ],
+          "roughness": [
+            3,
+            0
+          ],
+          "emissive": [
+            6,
+            0
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "type": "ColorParameter",
+        "pos": [
+          0,
+          -140
+        ],
+        "name": "Color",
+        "value": [
+          0.02,
+          0.08,
+          0.3
+        ]
+      },
+      {
+        "id": 3,
+        "type": "Parameter",
+        "pos": [
+          0,
+          -20
+        ],
+        "name": "Roughness",
+        "value": [
+          0.3
+        ]
+      },
+      {
+        "id": 4,
+        "type": "Fresnel",
+        "pos": [
+          0,
+          90
+        ],
+        "defaults": {
+          "exponent": [
+            3.0
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "type": "ColorParameter",
+        "pos": [
+          0,
+          200
+        ],
+        "name": "Rim",
+        "value": [
+          1500.0,
+          7000.0,
+          24000.0
+        ]
+      },
+      {
+        "id": 6,
+        "type": "Multiply",
+        "pos": [
+          260,
+          140
+        ],
+        "inputs": {
+          "a": [
+            4,
+            0
+          ],
+          "b": [
+            5,
+            0
+          ]
+        }
+      }
+    ]
+  }
+}

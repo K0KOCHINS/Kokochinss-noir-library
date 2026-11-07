@@ -1,0 +1,212 @@
+{
+  "schema": "noir.material/1",
+  "parent": "",
+  "values": {
+    "twoSided": false,
+    "alphaMask": false,
+    "alphaCutoff": 0.5,
+    "unlit": false
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": 1,
+        "type": "Output",
+        "pos": [
+          900,
+          0
+        ],
+        "inputs": {
+          "baseColor": [
+            11,
+            0
+          ],
+          "metallic": [
+            8,
+            0
+          ],
+          "roughness": [
+            12,
+            0
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "type": "TexCoord",
+        "pos": [
+          -500,
+          0
+        ],
+        "value": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "id": 3,
+        "type": "Mask",
+        "pos": [
+          -300,
+          0
+        ],
+        "channels": "y",
+        "inputs": {
+          "x": [
+            2,
+            0
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "type": "Parameter",
+        "pos": [
+          -300,
+          100
+        ],
+        "name": "Stripes",
+        "value": [
+          40.0
+        ]
+      },
+      {
+        "id": 5,
+        "type": "Multiply",
+        "pos": [
+          -100,
+          40
+        ],
+        "inputs": {
+          "a": [
+            3,
+            0
+          ],
+          "b": [
+            4,
+            0
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "type": "Sine",
+        "pos": [
+          100,
+          40
+        ],
+        "inputs": {
+          "x": [
+            5,
+            0
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "type": "Multiply",
+        "pos": [
+          300,
+          40
+        ],
+        "inputs": {
+          "a": [
+            6,
+            0
+          ]
+        },
+        "defaults": {
+          "b": [
+            6.0
+          ]
+        }
+      },
+      {
+        "id": 8,
+        "type": "Saturate",
+        "pos": [
+          500,
+          40
+        ],
+        "inputs": {
+          "x": [
+            7,
+            0
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "type": "ColorParameter",
+        "pos": [
+          500,
+          -200
+        ],
+        "name": "Metal",
+        "value": [
+          1.0,
+          0.71,
+          0.29
+        ]
+      },
+      {
+        "id": 10,
+        "type": "ColorParameter",
+        "pos": [
+          500,
+          -100
+        ],
+        "name": "Paint",
+        "value": [
+          0.02,
+          0.02,
+          0.02
+        ]
+      },
+      {
+        "id": 11,
+        "type": "Lerp",
+        "pos": [
+          700,
+          -140
+        ],
+        "inputs": {
+          "a": [
+            10,
+            0
+          ],
+          "b": [
+            9,
+            0
+          ],
+          "alpha": [
+            8,
+            0
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "type": "Lerp",
+        "pos": [
+          700,
+          60
+        ],
+        "inputs": {
+          "alpha": [
+            8,
+            0
+          ]
+        },
+        "defaults": {
+          "a": [
+            0.6
+          ],
+          "b": [
+            0.2
+          ]
+        }
+      }
+    ]
+  }
+}
