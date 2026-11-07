@@ -1,0 +1,11 @@
+{
+  "schema": "noir.plugin/1",
+  "id": "graph-essentials",
+  "name": "NOIR Graph Essentials",
+  "version": "1.0.0",
+  "author": "NOIR",
+  "license": "CC0",
+  "kind": "content",
+  "description": "Six material graphs to learn from and build on: molten lava (and a cold-lava instance), tiled stone with a normal map, rim-lit plastic, gold stripes and an animated dissolve.",
+  "provides": ["materials"]
+}

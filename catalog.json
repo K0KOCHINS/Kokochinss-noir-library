@@ -1,0 +1,133 @@
+{
+  "schema": "noir.library/1",
+  "name": "NOIR Library",
+  "updated": "2026-11-06",
+  "packs": [
+    {
+      "id": "graph-essentials",
+      "name": "NOIR Graph Essentials",
+      "category": "Material Graphs",
+      "style": "Any",
+      "author": "NOIR",
+      "license": "CC0",
+      "version": "1.0.0",
+      "description": "Six material graphs to learn from and build on: molten lava (and a cold-lava instance), tiled stone with a normal map, rim-lit plastic, gold stripes and an animated dissolve. A content plugin: installs into content/packs/graph-essentials.",
+      "thumbnail": "thumbs/graph-essentials.png",
+      "tags": [
+        "material graph",
+        "lava",
+        "dissolve",
+        "stylized",
+        "plugin"
+      ],
+      "files": [
+        "plugin.noir.json",
+        "materials/MG_Lava.mat.noir.json",
+        "materials/MI_LavaCold.mat.noir.json",
+        "materials/MG_TiledStone.mat.noir.json",
+        "materials/MG_RimPlastic.mat.noir.json",
+        "materials/MG_Stripes.mat.noir.json",
+        "materials/MG_Dissolve.mat.noir.json",
+        "textures/stone_albedo.png",
+        "textures/stone_normal.png"
+      ]
+    }
+  ],
+  "collections": [
+    {
+      "id": "medieval-village-props",
+      "name": "Medieval Village Props",
+      "category": "Collections",
+      "style": "Photoreal",
+      "author": "Poly Haven (curated by NOIR)",
+      "license": "CC0",
+      "description": "Twenty photoreal props for a medieval village (Ten Crowns): crates, barrels, buckets, a lantern, a chest, a kite shield, an axe, stools and tables, a spinning wheel, a tree stump and rocks.",
+      "tags": [
+        "medieval",
+        "village",
+        "props",
+        "ten crowns"
+      ],
+      "members": [
+        "polyhaven:wooden_crate_01",
+        "polyhaven:wooden_crate_02",
+        "polyhaven:wooden_barrels_01",
+        "polyhaven:wine_barrel_01",
+        "polyhaven:wooden_bucket_01",
+        "polyhaven:wooden_bucket_02",
+        "polyhaven:wooden_lantern_01",
+        "polyhaven:treasure_chest",
+        "polyhaven:kite_shield",
+        "polyhaven:wooden_axe",
+        "polyhaven:wooden_stool_01",
+        "polyhaven:WoodenTable_01",
+        "polyhaven:round_wooden_table_01",
+        "polyhaven:wicker_basket_01",
+        "polyhaven:spinning_wheel_01",
+        "polyhaven:wooden_candlestick",
+        "polyhaven:wooden_bowl_02",
+        "polyhaven:tree_stump_01",
+        "polyhaven:stone_01",
+        "polyhaven:rock_09"
+      ],
+      "thumbnail": ""
+    },
+    {
+      "id": "medieval-surfaces",
+      "name": "Medieval Surfaces",
+      "category": "Collections",
+      "style": "Photoreal",
+      "author": "Poly Haven (curated by NOIR)",
+      "license": "CC0",
+      "description": "Twelve photoreal materials for medieval streets and buildings: cobblestones, castle bricks and slates, roof slates, weathered planks, bark and forest ground.",
+      "tags": [
+        "medieval",
+        "stone",
+        "brick",
+        "ground",
+        "ten crowns"
+      ],
+      "members": [
+        "polyhaven:cobblestone_floor_04",
+        "polyhaven:grassy_cobblestone",
+        "polyhaven:medieval_blocks_03",
+        "polyhaven:castle_brick_02_red",
+        "polyhaven:stone_brick_wall_001",
+        "polyhaven:castle_wall_slates",
+        "polyhaven:medieval_red_brick",
+        "polyhaven:roof_slates_03",
+        "polyhaven:forrest_ground_01",
+        "polyhaven:brown_mud_leaves_01",
+        "polyhaven:weathered_brown_planks",
+        "polyhaven:bark_brown_02"
+      ],
+      "thumbnail": ""
+    },
+    {
+      "id": "skies-for-every-hour",
+      "name": "Skies for Every Hour",
+      "category": "Collections",
+      "style": "Photoreal",
+      "author": "Poly Haven (curated by NOIR)",
+      "license": "CC0",
+      "description": "Eight HDRI skies from dawn to night: sunrise, a fiery sunset, golden hour, clear and partly cloudy day, overcast and a starry night.",
+      "tags": [
+        "hdri",
+        "sky",
+        "sunset",
+        "night"
+      ],
+      "members": [
+        "polyhaven:lilienstein",
+        "polyhaven:the_sky_is_on_fire",
+        "polyhaven:spruit_sunrise",
+        "polyhaven:kloppenheim_06_puresky",
+        "polyhaven:kiara_1_dawn",
+        "polyhaven:overcast_soil_puresky",
+        "polyhaven:kloofendal_48d_partly_cloudy_puresky",
+        "polyhaven:satara_night"
+      ],
+      "thumbnail": ""
+    }
+  ]
+}
