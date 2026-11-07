@@ -1,0 +1,204 @@
+{
+  "schema": "noir.material/1",
+  "parent": "",
+  "values": {
+    "twoSided": false,
+    "alphaMask": false,
+    "alphaCutoff": 0.5,
+    "unlit": false
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": 1,
+        "type": "Output",
+        "pos": [
+          700,
+          0
+        ],
+        "inputs": {
+          "baseColor": [
+            8,
+            0
+          ],
+          "roughness": [
+            9,
+            0
+          ],
+          "normal": [
+            11,
+            0
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "type": "TexCoord",
+        "pos": [
+          -560,
+          0
+        ],
+        "value": [
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "id": 3,
+        "type": "Parameter",
+        "pos": [
+          -560,
+          100
+        ],
+        "name": "Tiling",
+        "value": [
+          3.0
+        ]
+      },
+      {
+        "id": 4,
+        "type": "Multiply",
+        "pos": [
+          -340,
+          40
+        ],
+        "inputs": {
+          "a": [
+            2,
+            0
+          ],
+          "b": [
+            3,
+            0
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "type": "TextureSample",
+        "pos": [
+          -120,
+          -120
+        ],
+        "name": "Albedo",
+        "texture": "content/packs/graph-essentials/textures/stone_albedo.png",
+        "srgb": true,
+        "inputs": {
+          "uv": [
+            4,
+            0
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "type": "TextureSample",
+        "pos": [
+          -120,
+          160
+        ],
+        "name": "Normal",
+        "texture": "content/packs/graph-essentials/textures/stone_normal.png",
+        "srgb": false,
+        "inputs": {
+          "uv": [
+            4,
+            0
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "type": "ColorParameter",
+        "pos": [
+          120,
+          -240
+        ],
+        "name": "Tint",
+        "value": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "id": 8,
+        "type": "Multiply",
+        "pos": [
+          360,
+          -160
+        ],
+        "inputs": {
+          "a": [
+            5,
+            0
+          ],
+          "b": [
+            7,
+            0
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "type": "Lerp",
+        "pos": [
+          360,
+          0
+        ],
+        "inputs": {
+          "alpha": [
+            5,
+            1
+          ]
+        },
+        "defaults": {
+          "a": [
+            0.95
+          ],
+          "b": [
+            0.55
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "type": "Multiply",
+        "pos": [
+          120,
+          160
+        ],
+        "inputs": {
+          "a": [
+            6,
+            0
+          ]
+        },
+        "defaults": {
+          "b": [
+            2.0
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "type": "Subtract",
+        "pos": [
+          360,
+          160
+        ],
+        "inputs": {
+          "a": [
+            10,
+            0
+          ]
+        },
+        "defaults": {
+          "b": [
+            1.0
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "schema": "noir.material/1",
+  "parent": "",
+  "values": {
+    "twoSided": true,
+    "alphaMask": true,
+    "alphaCutoff": 0.5,
+    "unlit": false
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": 1,
+        "type": "Output",
+        "pos": [
+          980,
+          0
+        ],
+        "inputs": {
+          "baseColor": [
+            17,
+            0
+          ],
+          "opacity": [
+            10,
+            0
+          ],
+          "emissive": [
+            16,
+            0
+          ]
+        },
+        "defaults": {
+          "roughness": [
+            0.4
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "type": "WorldPosition",
+        "pos": [
+          -500,
+          -60
+        ]
+      },
+      {
+        "id": 3,
+        "type": "Noise",
+        "pos": [
+          -280,
+          -60
+        ],
+        "inputs": {
+          "position": [
+            2,
+            0
+          ]
+        },
+        "defaults": {
+          "scale": [
+            3.0
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "type": "Time",
+        "pos": [
+          -500,
+          100
+        ]
+      },
+      {
+        "id": 5,
+        "type": "Multiply",
+        "pos": [
+          -280,
+          100
+        ],
+        "inputs": {
+          "a": [
+            4,
+            0
+          ]
+        },
+        "defaults": {
+          "b": [
+            0.7
+          ]
+        }
+      },
+      {
+        "id": 6,
+        "type": "Sine",
+        "pos": [
+          -80,
+          100
+        ],
+        "inputs": {
+          "x": [
+            5,
+            0
+          ]
+        }
+      },
+      {
+        "id": 7,
+        "type": "Multiply",
+        "pos": [
+          120,
+          100
+        ],
+        "inputs": {
+          "a": [
+            6,
+            0
+          ]
+        },
+        "defaults": {
+          "b": [
+            0.42
+          ]
+        }
+      },
+      {
+        "id": 8,
+        "type": "Add",
+        "pos": [
+          320,
+          100
+        ],
+        "inputs": {
+          "a": [
+            7,
+            0
+          ]
+        },
+        "defaults": {
+          "b": [
+            0.5
+          ]
+        }
+      },
+      {
+        "id": 9,
+        "type": "Subtract",
+        "pos": [
+          320,
+          -60
+        ],
+        "inputs": {
+          "a": [
+            3,
+            0
+          ],
+          "b": [
+            8,
+            0
+          ]
+        }
+      },
+      {
+        "id": 10,
+        "type": "Add",
+        "pos": [
+          540,
+          -140
+        ],
+        "inputs": {
+          "a": [
+            9,
+            0
+          ]
+        },
+        "defaults": {
+          "b": [
+            0.5
+          ]
+        }
+      },
+      {
+        "id": 11,
+        "type": "Abs",
+        "pos": [
+          540,
+          0
+        ],
+        "inputs": {
+          "x": [
+            9,
+            0
+          ]
+        }
+      },
+      {
+        "id": 12,
+        "type": "Multiply",
+        "pos": [
+          540,
+          100
+        ],
+        "inputs": {
+          "a": [
+            11,
+            0
+          ]
+        },
+        "defaults": {
+          "b": [
+            18.0
+          ]
+        }
+      },
+      {
+        "id": 13,
+        "type": "OneMinus",
+        "pos": [
+          740,
+          100
+        ],
+        "inputs": {
+          "x": [
+            12,
+            0
+          ]
+        }
+      },
+      {
+        "id": 14,
+        "type": "Saturate",
+        "pos": [
+          740,
+          200
+        ],
+        "inputs": {
+          "x": [
+            13,
+            0
+          ]
+        }
+      },
+      {
+        "id": 15,
+        "type": "ColorParameter",
+        "pos": [
+          740,
+          300
+        ],
+        "name": "Edge",
+        "value": [
+          60000.0,
+          18000.0,
+          2500.0
+        ]
+      },
+      {
+        "id": 16,
+        "type": "Multiply",
+        "pos": [
+          940,
+          220
+        ],
+        "inputs": {
+          "a": [
+            14,
+            0
+          ],
+          "b": [
+            15,
+            0
+          ]
+        }
+      },
+      {
+        "id": 17,
+        "type": "ColorParameter",
+        "pos": [
+          740,
+          -240
+        ],
+        "name": "Color",
+        "value": [
+          0.6,
+          0.6,
+          0.62
+        ]
+      }
+    ]
+  }
+}
